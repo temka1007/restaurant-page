@@ -6,6 +6,7 @@ module.exports = {
   output: {
     path: path.resolve(__dirname, "dist"),
     filename: "[name].bundle.js",
+    assetModuleFilename: "asset/[hash][ext][query]"
   },
   devtool: "inline-source-map",
   module: {
@@ -16,7 +17,7 @@ module.exports = {
       },
       {
         test: /\.(png|svg|jpg|jpeg|gif)$/i,
-        type: "asset/resource",
+        type: "asset/resource"
       },
       {
         test: /\.(woff|woff2|eot|ttf|otf)$/i,
