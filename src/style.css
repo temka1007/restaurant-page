@@ -1,16 +1,75 @@
 * {
-    border: 1px solid red;
+    box-sizing: border-box;
+    border: 1px solid red
 }
+#content {
+    min-height: 100vh;
+    max-width: 100vw;
+}
+
+/* top bar */
 .top-bar {
+    position: fixed;
     height: 100px;
     width: 100vw;
-    background-color: rgb(43, 43, 43);
+    background-color: rgb(5, 1, 1);
     display: flex;
-    padding: 10px;
+    padding-left: 200px;
+    padding-right: 200px;
+    justify-content: space-between;
+    align-items: center;
+}  
+.top-bar button {   
+    all: unset;
+}
+.logo {
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Lobster', cursive;
+    font-size: 55px;
+}
+.options-container {    
+    height: 50px;
+    width: 500px;
+    display: flex;
+    justify-content: space-evenly;
     align-items: center;
 }
-.top-bar > div,
-.top-bar > button {
-    height: 50px;
+.options-container button:nth-child(-n + 4) {
     width: 100px;
+    font-family: 'Rubik Dirt', cursive;
+    color: white;
+}
+.delivery {
+    color: red;
+}
+.fb {
+    background-image: url(./images/iconmonstr-facebook-3.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: black;
+    width: 30px;
+    height: 30px;
+}
+.insta {
+    background-image: url(./images/iconmonstr-instagram-11.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: black;
+    width: 30px;
+    height: 30px;
+}
+
+/* main content */
+
+.main-content {
+    display: flex;
+    height: 100vh;
+    padding-left: 150px ;
+    padding-right: 150px ;
+    background-image: url(./images/pexels-percival-ian-muico-2835547.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
 }
