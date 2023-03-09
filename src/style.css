@@ -1,75 +1,105 @@
 * {
-    box-sizing: border-box;
-    border: 1px solid red
+  box-sizing: border-box;
 }
 #content {
-    min-height: 100vh;
-    max-width: 100vw;
+  min-height: 100vh;
+  max-width: 100vw;
 }
 
 /* top bar */
 .top-bar {
-    position: fixed;
-    height: 100px;
-    width: 100vw;
-    background-color: rgb(5, 1, 1);
-    display: flex;
-    padding-left: 200px;
-    padding-right: 200px;
-    justify-content: space-between;
-    align-items: center;
-}  
-.top-bar button {   
-    all: unset;
+  position: fixed;
+  height: 100px;
+  width: 100vw;
+  background-color: rgb(5, 1, 1);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.top-bar > div {
+  display: flex;
+  align-items: center;
+  width: clamp(100px, 1400px, 80vw);
+  justify-content: space-between;
+}
+.top-bar button {
+  all: unset;
+  cursor: pointer;
+  margin-right: 20px;
 }
 .logo {
-    color: white;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-family: 'Lobster', cursive;
-    font-size: 55px;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Lobster", cursive;
+  font-size: 55px;
+  min-width: 300px;
+  cursor: pointer;
 }
-.options-container {    
-    height: 50px;
-    width: 500px;
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
+.options-container {
+  height: 50px;
+  width: 600px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
 }
 .options-container button:nth-child(-n + 4) {
-    width: 100px;
-    font-family: 'Rubik Dirt', cursive;
-    color: white;
+  font-family: "Rubik Dirt", cursive;
+  color: white;
+  font-size: 20px;
 }
-.delivery {
-    color: red;
+#content .delivery {
+  color: rgb(173, 15, 15);
 }
-.fb {
-    background-image: url(./images/iconmonstr-facebook-3.svg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-color: black;
-    width: 30px;
-    height: 30px;
+#content .fb {
+  background-image: url(./images/iconmonstr-facebook-3.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: black;
+  width: 30px;
+  height: 30px;
 }
-.insta {
-    background-image: url(./images/iconmonstr-instagram-11.svg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-color: black;
-    width: 30px;
-    height: 30px;
+#content .insta {
+  background-image: url(./images/iconmonstr-instagram-11.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: black;
+  width: 30px;
+  height: 30px;
 }
 
 /* main content */
 
 .main-content {
-    display: flex;
-    height: 100vh;
-    padding-left: 150px ;
-    padding-right: 150px ;
-    background-image: url(./images/pexels-percival-ian-muico-2835547.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
+  display: flex;
+  height: 100vh;
+  padding-left: 150px;
+  padding-right: 150px;
+  background-image: url(./images/pexels-percival-ian-muico-2835547.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  justify-content: center;
+  align-items: center;
+}
+.main-content > div {
+  font-family: "Rubik Dirt", cursive;
+  color: white;
+  font-size: 60px;
+  min-width: 700px;
+}
+.main-content .greeting {
+  font-size: 100px;
+}
+
+/* menu */
+
+#content .menu-content {
+    background-color: black;
+    min-height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+.beer-container {
+    grid-column-start: 2;
 }
