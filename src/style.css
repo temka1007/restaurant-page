@@ -1,5 +1,6 @@
 * {
   box-sizing: border-box;
+  /* border: 1px solid red; */
 }
 #content {
   min-height: 100vh;
@@ -94,12 +95,69 @@
 
 /* menu */
 
+/* beers */
+
 #content .menu-content {
-    background-color: black;
-    min-height: 100vh;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+  background-color: black;
+  min-height: 100vh;
+  display: flex;
+  padding-top: 120px; 
+  flex-direction: column;
+  align-items: center;
 }
 .beer-container {
-    grid-column-start: 2;
+  width: 800px;
+  display: grid;
+  grid-template-columns: 1.2fr 1fr;
+  padding: 0px 30px 0px 30px;
+}
+.beer-list {
+  height: 800px;
+  padding: 0px 60px 0px 0px;
+  display: grid;
+}
+.beer-list > div {
+  min-width: 300px;
+  color: white;
+  display: flex;
+  align-items: center;
+  font-family: 'Anton', sans-serif;
+  letter-spacing: 1px;
+  justify-content: space-between;
+}
+.beer-image {
+  height: 600px;
+  background-image: url(./images/beer-image.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+/* foods */
+
+#content .food-container {
+  margin-top: 70px;
+  margin-bottom: 100px;
+  width: 800px;
+  display: grid;
+  grid-template-columns: 1fr 1.2fr;
+  padding: 0px 30px 0px 30px;
+}
+.food-image {
+  height: 600px;
+  background-image: url(./images/burger.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.food-list {
+  height: 800px;
+  padding: 0px 0px 0px 60px;
+  display: grid;
+}
+#content .food-list > div {
+  min-width: 300px;
+  color: white;
+  display: flex;
+  align-items: center;
+  font-family: 'Anton', sans-serif;
+  letter-spacing: 1px;
+  justify-content: space-between;
 }
