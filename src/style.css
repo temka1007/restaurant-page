@@ -1,6 +1,5 @@
 * {
   box-sizing: border-box;
-  /* border: 1px solid red; */
 }
 #content {
   min-height: 100vh;
@@ -50,8 +49,16 @@
   color: white;
   font-size: 20px;
 }
+#content .menu:active,
+#content .gallery:active,
+#content .contact:active {
+  transform: translateY(2px);
+}
 #content .delivery {
   color: rgb(173, 15, 15);
+}
+#content .delivery:active {
+  transform: translateY(2px);
 }
 #content .fb {
   background-image: url(./images/iconmonstr-facebook-3.svg);
@@ -68,6 +75,10 @@
   background-color: black;
   width: 30px;
   height: 30px;
+}
+#content .fb:active,
+#content .insta:active {
+  transform: translateY(2px);
 }
 
 /* main content */
@@ -101,7 +112,7 @@
   background-color: black;
   min-height: 100vh;
   display: flex;
-  padding-top: 120px; 
+  padding-top: 120px;
   flex-direction: column;
   align-items: center;
 }
@@ -121,7 +132,7 @@
   color: white;
   display: flex;
   align-items: center;
-  font-family: 'Anton', sans-serif;
+  font-family: "Anton", sans-serif;
   letter-spacing: 1px;
   justify-content: space-between;
 }
@@ -157,7 +168,91 @@
   color: white;
   display: flex;
   align-items: center;
-  font-family: 'Anton', sans-serif;
+  font-family: "Anton", sans-serif;
   letter-spacing: 1px;
   justify-content: space-between;
+}
+
+/* gallery */
+
+#content .gallery-content {
+  background-color: black;
+  display: flex;
+  justify-content: center;
+  min-height: 100vh;
+}
+
+.image-container {
+  margin-top: 150px;
+  margin-bottom: 100px;
+  min-width: 540px;
+  width: 50vw;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 20px;
+}
+#content .image-container > div {
+  display: grid;
+  min-height: 280px;
+  background-color: white;
+}
+#content .image-container > div:nth-child(1) {
+  background-image: url(./images/one.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+#content .image-container > div:nth-child(2) {
+  background-image: url(./images/two.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+#content .image-container > div:nth-child(3) {
+  background-image: url(./images/three.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+#content .image-container > div:nth-child(4) {
+  background-image: url(./images/four.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+#content .image-container > div:nth-child(5) {
+  background-image: url(./images/five.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+#content .image-container > div:nth-child(6) {
+  background-image: url(./images/six.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+#content .image-container > div:nth-child(7) {
+  background-image: url(./images/seven.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+#content .image-container > div:nth-child(8) {
+  background-image: url(./images/eigth.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+#content .image-container > div:nth-child(9) {
+  background-image: url(./images/nine.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+#content .image-container > div:nth-child(10) {
+  background-image: url(./images/ten.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+#content .image-container > div:nth-child(11) {
+  background-image: url(./images/eleven.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+#content .image-container > div:nth-child(12) {
+  background-image: url(./images/twelve.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
 }

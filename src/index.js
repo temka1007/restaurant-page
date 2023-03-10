@@ -1,7 +1,9 @@
 import "./style.css";
 // eslint-disable-next-line no-unused-vars
 import texasLogo from "./images/texas-logo.png";
-import menuContent from "./menu";
+import menuPage from "./menu";
+import galleryPage from "./gallery";
+import contactPage from "./contact"
 
 // body > #content
 const divContent = document.querySelector("#content");
@@ -98,5 +100,19 @@ menuBtn.addEventListener("click", () => {
   clearContent();
   content.removeAttribute("class");
   content.classList.add("menu-content");
-  menuContent();
+  menuPage();
 });
+
+galleryBtn.addEventListener("click", () => {
+  clearContent();
+  content.removeAttribute("class");
+  content.classList.add("gallery-content");
+  galleryPage();
+})
+
+contactBtn.addEventListener("click", () => {
+  clearContent();
+  content.removeAttribute("class");
+  content.classList.add("contact-content");
+  contactPage();
+})
